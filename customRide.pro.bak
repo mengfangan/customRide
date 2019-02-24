@@ -1,0 +1,37 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2017-07-18T11:28:49
+#
+#-------------------------------------------------
+
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+
+TARGET = saicRide
+TEMPLATE = app
+
+
+SOURCES += main.cpp\
+        mainwindow.cpp \
+    plotwidget.cpp \
+    leftwidget.cpp \
+    qcustomplot.cpp \
+    plottime.cpp \
+    plotfrequency.cpp \
+    plotbarchart.cpp
+
+HEADERS  += mainwindow.h \
+    plotwidget.h \
+    leftwidget.h \
+    qcustomplot.h \
+    plottime.h \
+    plotfrequency.h \
+    plotbarchart.h
+CONFIG+=qwt
+QT += axcontainer
+
+RESOURCES += \
+    images/image.qrc
+
+DISTFILES +=
